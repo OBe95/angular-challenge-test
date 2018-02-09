@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import {Facet, Facets, Filter, ResultsModel, SolrResponse} from './results.model';
 
-const url = 'http://odn.voyagersearch.com/solr/v0/select?';
+const url = '//odn.voyagersearch.com/solr/v0/select?';
 const fl = 'title,name:[name],format,fullpath:[absolute],absolute_path:[absolute],' +
   'thumb:[thumbURL],download:[downloadURL],modified,keywords';
 const sort = 'score desc';

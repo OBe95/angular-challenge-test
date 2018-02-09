@@ -49,7 +49,7 @@
     Load more results...
   </button>
 
-  <mat-progress-spinner *ngIf="loading"
+  <mat-progress-spinner *ngIf="loading && queryTerm"
                         [diameter]="50"
                         [strokeWidth]="3"
                         mode="indeterminate">
