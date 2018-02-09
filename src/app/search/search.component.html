@@ -7,11 +7,11 @@
       <mat-form-field>
         <input type="text" #queryInput formControlName="query" placeholder="Search query" matInput/>
       </mat-form-field>
-      <button mat-icon-button class="clear-button" (click)="clearForm()">
-        <mat-icon>clear</mat-icon>
-      </button>
       <button type="submit" mat-icon-button class="search-button" [disabled]="loading || !query">
         <mat-icon>search</mat-icon>
+      </button>
+      <button mat-icon-button class="clear-button" (click)="clearForm()">
+        <mat-icon>clear</mat-icon>
       </button>
     </form>
     <button *ngIf="queryTerm" mat-button class="filter-button" [disabled]="loading || !query" (click)="filter()">
